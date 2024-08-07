@@ -22,6 +22,7 @@ public class ConstantsSwerve {
         public static final double closedLoopRamp = 0.0;
 
         public static final double driveGearRatio = 6.12;
+        public static final double angleGearRatio = 150/7;
 
         public static final SwerveDriveKinematics swerveKinematics =
             new SwerveDriveKinematics(
@@ -55,6 +56,10 @@ public class ConstantsSwerve {
         // Drive Motor Conversion Factors
         public static final double driveConversionPositionFactor = wheelCircumference / driveGearRatio;
         public static final double driveConversionVelocityFactor = driveConversionPositionFactor / 60.0;
+
+        // Angle Motor Conversion Factors
+        public static final double angleConversionPositionFactor = wheelCircumference / angleGearRatio;
+        public static final double angleConversionVelocityFactor = angleConversionPositionFactor / 60.0;
 
         // Swerve Profiling Values
         public static final double maxSpeed = 5; // meters per second
