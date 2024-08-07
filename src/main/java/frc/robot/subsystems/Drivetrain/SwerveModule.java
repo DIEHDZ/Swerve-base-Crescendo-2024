@@ -68,7 +68,7 @@ public class SwerveModule {
         azimuthalMotor.setSmartCurrentLimit(ConstantsSwerve.Swerve.angleContinuousCurrentLimit);
         azimuthalMotor.setInverted(azimuthalInvert);
         azimuthalMotor.setIdleMode(ConstantsSwerve.Swerve.angleNeutralMode);
-        azimuthalEncoder.setPositionConversionFactor(ConstantsSwerve.Swerve.driveConversionPositionFactor);
+        azimuthalEncoder.setPositionConversionFactor(ConstantsSwerve.Swerve.angleConversionPositionFactor);
         azimuthalController.setP(ConstantsSwerve.Swerve.azimuthalKP);
         azimuthalController.setI(ConstantsSwerve.Swerve.azimuthalKI);
         azimuthalController.setD(ConstantsSwerve.Swerve.azimuthalKD);
